@@ -1,0 +1,44 @@
+body {
+  background-color: #A3A380;
+  font-family: "Bahnschrift light";
+  color: #FFFBDD;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#header {
+  background-color: #7C7C63;
+  margin: 10px 22px 2px 22px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFBDD;
+  font-size: large;
+  font-family: "bahnschrift";
+}
+
+h1 {
+    font-family: "Impact";
+    font-size: 10rem;
+    font-weight: 500;
+    margin: 0px 20px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#introduction {
+    display: flex;
+    justify-self: end;
+    text-align: end;
+    margin: -20px 24px 0px 0px;
+    width: 750px;
+    font-size: 0.95rem;
+}
