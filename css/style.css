@@ -2,6 +2,7 @@ body {
   background-color: #A3A380;
   font-family: "Bahnschrift light";
   color: #FFFBDD;
+  margin: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -41,4 +42,12 @@ h1 {
     margin: -20px 24px 0px 0px;
     width: 750px;
     font-size: 0.95rem;
+}
+
+#footer {
+  background-color: #6A6A55;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
 }
