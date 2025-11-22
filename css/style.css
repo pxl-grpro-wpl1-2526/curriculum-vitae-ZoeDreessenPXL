@@ -1,3 +1,4 @@
+/* General style of page */
 body {
   background-color: #A3A380;
   font-family: "Bahnschrift light";
@@ -5,10 +6,12 @@ body {
   margin: 0px;
 }
 
+/* Hide scrollbar */
 ::-webkit-scrollbar {
   display: none;
 }
 
+/* Header */
 #header {
   background-color: #7C7C63;
   margin: 10px 22px 2px 22px;
@@ -19,6 +22,7 @@ body {
   justify-content: space-evenly;
 }
 
+/* Styling hyperlinks */
 a {
   text-decoration: none;
   color: #FFFBDD;
@@ -26,15 +30,17 @@ a {
   font-family: "bahnschrift";
 }
 
+/* Styling h1 */
 h1 {
     font-family: "Impact";
     font-size: 10rem;
     font-weight: 500;
-    margin: 0px 20px 0px 0px;
+    margin: 250px 20px 0px 0px;
     display: flex;
     justify-content: flex-end;
 }
 
+/* Styling introduction text */
 #introduction {
     display: flex;
     justify-self: end;
@@ -44,6 +50,61 @@ h1 {
     font-size: 0.95rem;
 }
 
+/* Styling h2 */
+h2 {
+  font-family: "impact";
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+/* Styling h3 */
+h3 {
+  font-family: "bahnschrift";
+}
+
+/* Education box */
+#education {
+    background-color: #6A6A55;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 15px 22px 5px 22px;
+    padding: 0px 0px 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Display studies in a row */
+#studies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Individual styling studies */
+.study {
+  width: 25%;
+  padding: 0px 0px 20px 0px;
+}
+
+/* Adjusts margins of studies */
+.study h3,
+.study p {
+  margin: 3px;
+}
+
+/* Sets institutions of studies italic */
+.educationalInstitution {
+  font-style: italic;
+}
+
+.diploma {
+  width: 30px;
+  vertical-align: middle;
+}
+
+/* Footer */
 #footer {
   background-color: #6A6A55;
   display: flex;
