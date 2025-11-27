@@ -13,6 +13,7 @@ body {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -111,7 +112,7 @@ h3 {
 }
 
 /* Styles hard and soft skills boxes next to each other */
-#Skills {
+#skills {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
@@ -147,6 +148,48 @@ h3 {
 .languages h2, .languages p {
   margin: 3px;
 }
+
+/* Styling table */
+table {
+  width: 75%;
+  height: 100px;
+  margin: 3px 0px 0px 22px;
+  /* border-spacing: 10px 5px; */
+  align-items: center;
+  text-align: center;
+}
+
+col {
+  width: 50%;
+}
+
+tr {
+  border-bottom: 3px solid #A3A380;
+  background-color: #7C7C63;
+}
+
+td {
+  border-radius: 10px;
+}
+
+/* Styling difference rows */
+tr:nth-child(even) {
+  background-color: #6A6A55;
+}
+
+/* tr td:first-child {
+  border-right: 10px solid #A3A380;
+} */
+
+/* Rounded corner last row on the left
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+/* Rounded corner last row on the right
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+} */
 
 /* Footer */
 #footer {
