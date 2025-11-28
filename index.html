@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>CV</title>
     </head>
     <body>
-        <div id="top"></div>
-        <!-- Header -->
-        <div id="header">
+        <!-- NavBar -->
+        <nav id="top">
             <a href="#education">Opleidingen</a>
             <a href="#skills">Vaardigheden</a>
             <a href="#languages">Talenkennis</a>
             <a href="#workExperience">Werkervaring</a>
-        </div>
+        </nav>
         <!-- Title -->
         <h1>Zoë Dreessen</h1>
         <!-- Introduction -->
@@ -99,90 +99,120 @@
             </div>
         </div>
         <!-- Talenkennis -->
-        <div class="languages">
-            <h2 id="languages">Talenkennis</h2>
-        </div>
+        <h2 id="languages">Talenkennis</h2>
         <table>
-                <colgroup>
-                    <col>
-                    <col>
-                </colgroup>
-                <tr>
-                    <td>
-                        <p>Nederlands</p>
-                    </td>
-                    <td>
-                        <p>Moedertaal</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Engels</p>
-                    </td>
-                    <td>
-                        <p>Goede kennis</p>
-                    </td>
-                </tr>
-            </table>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <td>
+                    <p>Nederlands</p>
+                </td>
+                <td>
+                    <p>Moedertaal</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Engels</p>
+                </td>
+                <td>
+                    <p>Goede kennis</p>
+                </td>
+            </tr>
+        </table>
         <!-- Werkervaring -->
-        <h2 id="workExperience">Werkervaring</h2>
-        <div>
+        <div id="workExperience">
+            <h2>Werkervaring</h2>
             <div>
-                Assurio BV
-                Stage Full Stack 
-                maart 2025 - april 2025
-                Betreffende een nieuw project. Agile werking, ik had de rol van scrum master. 
-                Taken die ik heb uitgevoerd: databankdesign en implementatie, CRUD, backend logica, frontend design, API-integratie.
-            </div>
-            <div>
-                Badvisjes - Maasmechelen
-                Lesgever zwemles
-                september 2024 - heden
-                Basis schoolslag aanleren (been- en armbeweging) en basis crawl aanleren (ademhaling, beenbeweging)
-            </div>
-            <div>
-                Yes Events - Maasmechelen
-                Student (hoofd)animator
-                augustus 2025 - heden
-                Voor- en naopvang. Thema activiteiten geven. Sport- en spelactiviteiten geven.
-                Contact met ouders. Kinderen verzorgen bij ongevallen. Kampplaats in orde houden.
-                Het animatieteam ondersteunen. Terugkoppeling naar hoofkantoor.
-            </div>
-            <div>
-                Maasmeander - Maasmechelen
-                Student Logistiek
-                oktober 2025 - heden
-                Cafetaria proper houden. Bestellingen opnemen, brengen en afruimen. 
-            </div>
-            <div>
-                Skillz - Hasselt en Genk
-                Student (hoofd)animator
-                april 2021 - augustus 2025
-                Voor- en naopvang. Thema activiteiten geven. Sport- en spelactiviteiten geven.
-                Contact met ouders. Kinderen verzorgen bij ongevallen. Kampplaats in orde houden.
-                Het animatieteam ondersteunen. Terugkoppeling naar hoofkantoor.
-            </div>
-            <div>
-                Mise en Place - Hasselt
-                Student kelner
-                april 2024 - juni 2025 
-                Op evenementen drank en eten opdienen en afruimen.
-            </div>
-            <div>
-                Okay - Dilsen
-                Student verkoop
-                mei 2020 - januari 2021
-                Winkel aanvullen, winkel proper houden, kassawerk.
-            </div>
-            <div>
-                Itek - Lanklaar
-                Student verkoop
-                mei 2019 - september 2019
-                Verkoper tuinmeubels, zwembaden, gras- en bosmaaiers. 
-                Toonzaal proper houden, winkel aanvullen, klanten informeren over producten.
+                <ul>
+                    <li>
+                        <div>
+                            <p>Assurio BV</p>
+                            <p>Stage Full Stack</p>
+                            <p>maart 2025 - april 2025</p>
+                            <p>Betreffende een nieuw project. Agile werking, ik had de rol van scrum master.</p>
+                            <p>
+                                Taken die ik heb uitgevoerd: databankdesign en implementatie, 
+                                CRUD, backend logica, frontend design, API-integratie.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Badvisjes - Maasmechelen</p>
+                            <p>Lesgever zwemles</p>
+                            <p>september 2024 - heden</p>
+                            <p>
+                                Basis schoolslag aanleren (been- en armbeweging) 
+                                en basis crawl aanleren (ademhaling, beenbeweging)
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Yes Events - Maasmechelen</p>
+                            <p>Student (hoofd)animator</p>
+                            <p>augustus 2025 - heden</p>
+                            <p>
+                                Voor- en naopvang. Thema activiteiten geven. Sport- en spelactiviteiten geven.
+                                Contact met ouders. Kinderen verzorgen bij ongevallen. Kampplaats in orde houden.
+                                Het animatieteam ondersteunen. Terugkoppeling naar hoofkantoor.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Maasmeander - Maasmechelen</p>
+                            <p>Student Logistiek</p>
+                            <p>oktober 2025 - heden</p>
+                            <p>Cafetaria proper houden. Bestellingen opnemen, brengen en afruimen.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Skillz - Hasselt en Genk</p>
+                            <p>Student (hoofd)animator</p>
+                            <p>april 2021 - augustus 2025</p>
+                            <p>
+                                Voor- en naopvang. Thema activiteiten geven. Sport- en spelactiviteiten geven.
+                                Contact met ouders. Kinderen verzorgen bij ongevallen. Kampplaats in orde houden.
+                                Het animatieteam ondersteunen. Terugkoppeling naar hoofkantoor.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Mise en Place - Hasselt</p>
+                            <p>Student kelner</p>
+                            <p>april 2024 - juni 2025</p>
+                            <p>Op evenementen drank en eten opdienen en afruimen.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Okay - Dilsen</p>
+                            <p>Student verkoop</p>
+                            <p>mei 2020 - januari 2021</p>
+                            <p>Winkel aanvullen, winkel proper houden, kassawerk.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Itek - Lanklaar</p>
+                            <p>Student verkoop</p>
+                            <p>mei 2019 - september 2019</p>
+                            <p>
+                                Verkoper tuinmeubels, zwembaden, gras- en bosmaaiers. 
+                                Toonzaal proper houden, winkel aanvullen, klanten informeren over producten.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="footer">
+        <footer>
             <div>
                 <div>Zoë Dreessen</div>
                 <div>1PROD</div>
@@ -193,6 +223,6 @@
             <div>
                 <a href="#top">Terug naar boven</a>
             </div>
-        </div>
+        </footer>
     </body>
 </html>

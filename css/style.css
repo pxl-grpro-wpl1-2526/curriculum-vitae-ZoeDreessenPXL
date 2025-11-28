@@ -16,8 +16,8 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Header */
-#header {
+/* NavBar */
+nav {
   background-color: #7C7C63;
   margin: 10px 22px 2px 22px;
   padding: 20px;
@@ -136,17 +136,12 @@ h3 {
 }
 
 /* Styles languages box */
-.languages {
+#languages {
   background-color: #6A6A55;
   width: 75%;
   margin: 30px 22px 0px 22px;
   padding: 10px;
   border-radius: 10px;
-}
-
-/* Styles margins language text */
-.languages h2, .languages p {
-  margin: 3px;
 }
 
 /* Styling table */
@@ -177,22 +172,8 @@ tr:nth-child(even) {
   background-color: #6A6A55;
 }
 
-/* tr td:first-child {
-  border-right: 10px solid #A3A380;
-} */
-
-/* Rounded corner last row on the left
-tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-
-/* Rounded corner last row on the right
-tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-} */
-
 /* Footer */
-#footer {
+footer {
   background-color: #6A6A55;
   display: flex;
   flex-direction: row;
