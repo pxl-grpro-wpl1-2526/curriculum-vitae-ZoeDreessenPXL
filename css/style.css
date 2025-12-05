@@ -101,7 +101,7 @@ h3 {
 }
 
 /* Sets institutions of studies italic */
-.educationalInstitution {
+.location {
   font-style: italic;
 }
 
@@ -149,20 +149,22 @@ table {
   width: 75%;
   height: 100px;
   margin: 3px 0px 0px 22px;
-  /* border-spacing: 10px 5px; */
   align-items: center;
   text-align: center;
 }
 
+/* Width table columns */
 col {
   width: 50%;
 }
 
+/* Styling table rows */
 tr {
   border-bottom: 3px solid #A3A380;
   background-color: #7C7C63;
 }
 
+/* Styling table cells */
 td {
   border-radius: 10px;
 }
@@ -172,6 +174,52 @@ tr:nth-child(even) {
   background-color: #6A6A55;
 }
 
+/* Styling workExperience box */
+#workExperience {
+  background-color: #7C7C63;
+  width: 75%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 22px 0px auto;
+  padding: 10px;
+}
+
+#workExperience h2, h3, p {
+  margin: 3px;
+}
+
+/* Styling workExperience list */
+#workExperience ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styling workExperience list items */
+#workExperience li  {
+  background-color: #6A6A55;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  width: 49%;
+}
+
+/* Styling work experience h3 */
+#workExperience h3 {
+  font-weight: bold;
+}
+
+#workExperience span {
+  display: none;
+}
+
+#workExperience:hover span {
+  display: block;
+}
+
 /* Footer */
 footer {
   background-color: #6A6A55;
@@ -179,4 +227,5 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+  margin-top: 30px;
 }
