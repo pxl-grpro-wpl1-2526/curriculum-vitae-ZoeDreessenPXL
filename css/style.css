@@ -24,6 +24,7 @@ nav {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -35,11 +36,12 @@ a {
   font-family: "bahnschrift";
 }
 
+/* Styling header */
 header {
   background-image: url(../images/Foto.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: cover;
   height: 70vh;
 
   -webkit-mask-image: linear-gradient(
@@ -64,6 +66,7 @@ header {
   padding-bottom: 70px;
 }
 
+/* Hover styling header */
 header:hover {
   text-shadow: 1px 1px #2d1013;
 }
@@ -72,7 +75,7 @@ header:hover {
 h1 {
   color: #7d2c36;
   font-family: "Impact";
-  font-size: 10rem;
+  font-size: 10vw;
   font-weight: 500;
   margin: 0px 20px 0px 0px;
 }
@@ -81,9 +84,9 @@ h1 {
 header p {
   color: #7d2c36;
   text-align: end;
-  margin: -20px 24px 0px 0px;
-  width: 750px;
-  font-size: 0.95rem;
+  margin: -15px 24px 0px 0px;
+  width: 50vw;
+  font-size: 0.95vw;
 }
 
 /* Styling h2 */
@@ -216,6 +219,7 @@ tr:nth-child(even) {
   padding: 10px;
 }
 
+/* Margin text in work experience box */
 #workExperience h2, h3, p {
   margin: 3px;
 }
@@ -264,6 +268,111 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   margin-top: 30px;
+}
+
+/* Styling link footer */
+footer a {
+  font-weight: 100;
+  font-family: "Bahnschrift light";
+  font-size: medium;
+}
+
+/* Mobile */
+@media (max-width: 575.99px) {
+  /* Styling hyperlinks */
+  a {
+    font-size: medium;
+  }
+
+  /* Styling header */
+  header {
+    background-position: left center;
+    height: 50vh;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 0px;
+    padding-top: 50px;
+  }
+
+  /* Styling h1 */
+  h1 {
+    font-size: 15vw;
+    margin: 0px;
+  }
+
+  /* Styling introduction text */
+  header p {
+    text-align: center;
+    margin: -10px 0px 0px 0px;
+    width: 80vw;
+    font-size: 2vw;
+  }
+
+  /* Styling h2 */
+  h2 {
+    font-size: x-large;
+  }
+
+  /* Education box */
+  #education {
+    width: calc(100% - 44px);
+  }
+
+  /* Individual styling studies */
+  .study {
+    width: 50%;
+  }
+
+  /* Styles hard and soft skills boxes next to each other */
+  #skills {
+    margin-top: 15px;
+    width: calc(100% - 44px);
+  }
+
+  /* Styles hard skills and soft skills boxes */
+  .allSkills {
+    text-align: center;
+  }
+
+  /* Styles languages box */
+  #languages {
+    width: calc(100% - 44px);
+    margin: 15px 22px 0px 22px;
+  }
+
+  /* Styling table */
+  table {
+    width: calc(100% - 44px);
+  }
+
+  /* Styling workExperience box */
+  #workExperience {
+    width: calc(100% - 44px);
+    margin: 15px 22px 0px auto;
+  }
+
+  /* Styling workExperience list items */
+  #workExperience li  {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 991.99px) {
+
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+
 }
