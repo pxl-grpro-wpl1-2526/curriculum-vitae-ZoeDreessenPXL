@@ -11,6 +11,7 @@ body {
   display: none;
 }
 
+/* Correct box calculations + smooth scrolling */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -40,9 +41,7 @@ a {
 header {
   background-image: url(../images/Foto.png);
   background-repeat: no-repeat;
-  background-position: bottom;
   background-size: cover;
-  height: 70vh;
 
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -68,12 +67,11 @@ header {
 
 /* Hover styling header */
 header:hover {
-  text-shadow: 1px 1px #2d1013;
+  text-shadow: 1px 1px #001007;
 }
 
 /* Styling h1 */
 h1 {
-  color: #7d2c36;
   font-family: "Impact";
   font-size: 10vw;
   font-weight: 500;
@@ -82,7 +80,6 @@ h1 {
 
 /* Styling introduction text */
 header p {
-  color: #7d2c36;
   text-align: end;
   margin: -15px 24px 0px 0px;
   width: 50vw;
@@ -124,7 +121,6 @@ h3 {
 
 /* Individual styling studies */
 .study {
-  width: 25%;
   padding: 0px 0px 20px 0px;
 }
 
@@ -178,6 +174,7 @@ h3 {
   border-radius: 10px;
 }
 
+/* Hide mobile version of languages box */
 #languagesMobile {
   display: none;
 }
@@ -246,6 +243,16 @@ tr:nth-child(even) {
   width: calc(50% - 10px);
 }
 
+/* Style workExperience full width */
+#workExperience li.fullWidth {
+  width: 100%;
+}
+
+/* Hide element */
+.hidden {
+  display: none;
+}
+
 /* Styling work experience h3 */
 #workExperience h3 {
   font-weight: bold;
@@ -259,11 +266,6 @@ tr:nth-child(even) {
 /* Show task package on hover */
 #workExperience li:hover .taskPackage {
   display: inline;
-}
-
-/* LOOK INTO GETTING THE BOX NEATLY INTO FULL WIDTH ON HOVER */
-#workExperience li:hover {
-  width: 100%;
 }
 
 /* Footer */
@@ -293,12 +295,10 @@ footer a {
 
   /* Styling header */
   header {
-    background-position: left center;
-    height: 50vh;
     align-items: center;
     justify-content: start;
     padding-bottom: 0px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   /* Styling h1 */
@@ -309,10 +309,7 @@ footer a {
 
   /* Styling introduction text */
   header p {
-    text-align: center;
-    margin: -10px 0px 0px 0px;
-    width: 80vw;
-    font-size: 2.5vw;
+    display: none;
   }
 
   /* Styling h2 */
@@ -323,11 +320,6 @@ footer a {
   /* Education box */
   #education {
     width: calc(100% - 44px);
-  }
-
-  /* Individual styling studies */
-  .study {
-    width: 50%;
   }
 
   /* Styles hard and soft skills boxes next to each other */
@@ -395,21 +387,42 @@ footer a {
   #workExperience li  {
     width: 100%;
   }
-
-  /* Footer */
-  footer {
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 15px;
-  }
 }
 
 /* Tablet */
 @media (min-width: 576px) and (max-width: 991.99px) {
+  /* Styling introduction text */
+  header p {
+    margin: -10px 22px 0px 0px;
+    width: 60vw;
+    font-size: 1.5vw;
+  }
+}
 
+/* Mobile and Tablet */
+@media (max-width: 991.99px) {
+  /* Styling header */
+  header {
+    background-position: left center;
+    height: 50vh;
+  }
+
+  /* Styling individual studies */
+  .study {
+    width: 50%;
+  }
 }
 
 /* Desktop */
 @media (min-width: 992px) {
+  /* Styling header */
+  header {
+    height: 77vh;
+    background-position: bottom;
+  }
 
+  /* Styling individual studies */
+  .study {
+    width: 25%;
+  }
 }
