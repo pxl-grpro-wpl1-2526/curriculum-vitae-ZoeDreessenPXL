@@ -241,6 +241,7 @@ tr:nth-child(even) {
   margin: 5px;
   padding: 10px;
   width: calc(50% - 10px);
+  cursor: pointer;
 }
 
 /* Style workExperience full width */
@@ -259,12 +260,12 @@ tr:nth-child(even) {
 }
 
 /* Hide task package by default */
-#workExperience li .taskPackage {
+#workExperience li .taskPackageHide {
   display: none;
 }
 
 /* Show task package on hover */
-#workExperience li:hover .taskPackage {
+#workExperience li .taskPackageShow {
   display: inline;
 }
 
